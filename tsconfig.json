@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "lib": ["es6", "DOM"],
+    "importHelpers": true
+  },
+  "files": ["./lib/index.ts"],
+  "exclude": ["node_modules", "**/test/*"]
+}
