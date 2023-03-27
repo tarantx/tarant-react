@@ -1,2 +1,2 @@
 export { ActorSystem, ActorSystemConfigurationBuilder } from 'tarant'
-export { VueRenderer } from './vue-renderer'
+export { ReactRenderer } from './react-renderer'
