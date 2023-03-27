@@ -24,20 +24,19 @@ add it to your project using `npm install tarant-react --save` or `yarn add tara
 Extend the react actor with a template and the properties to bind to the id of the actor will relate to the html component id
 
 ```js
-import { ReactActor } from "tarant-react";
+import React from "react";
+import { decorator } from "../../utils/decorator"
+import { AppActor } from "../AppActor"
 
-export default class AppActor extends ReactActor {
-    constructor() {
-      super("#app")
-      this.schedule(1000, this.incrementCounter, [])
-    }
-  
-    private incrementCounter(): void {
-      this.counter++;
+export class ReactDecorator extends decorator<AppActor> {
+    constructor(actor: AppActor) {
+        super(actor)
     }
 
-    private counter = 0; 
-    readonly template : string = "<div>counter: {{counter}}</div>"
+    render() {
+        return (<div id="app"><button onClick={(this.actor as any).self.addOne}>{this.actor.counter}</button></div>)
+    }
+
 }
 ```
 
