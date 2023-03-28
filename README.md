@@ -55,4 +55,4 @@ window.onload = () => {
   system.actorOf(AppActor)
 }
 ```
-##### Created my free [logo](https://logomakr.com/3zsWGM) at <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> 
+
