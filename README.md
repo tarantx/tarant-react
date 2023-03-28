@@ -1,15 +1,17 @@
-# Tarant React
+# ![tarant-react](https://user-images.githubusercontent.com/3071208/228214632-97499cb2-d6c4-4562-9e64-cdbd6a9dfc1b.png)
 
 
+![Downloads](https://img.shields.io/npm/dt/tarant-react.svg)
 [![npm](https://img.shields.io/npm/v/tarant-react.svg)](https://www.npmjs.com/package/tarant-react)
-[![Build Status](https://travis-ci.org/tarantx/tarant-react.svg?branch=master)](https://travis-ci.org/tarantx/tarant-react)
-[![Coverage Status](https://coveralls.io/repos/github/tarantx/tarant-react/badge.svg?branch=master)](https://coveralls.io/github/tarantx/tarant-react?branch=master)
+![npm](https://img.shields.io/npm/l/tarant-react.svg)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/tarantx/tarant-react/build.yml?branch=main)
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d0264ba3d46b064b1293/maintainability)](https://codeclimate.com/github/tarantx/tarant-react/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d0264ba3d46b064b1293/test_coverage)](https://codeclimate.com/github/tarantx/tarant-react/test_coverage)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![issues Welcome](https://img.shields.io/badge/issues-welcome-brightgreen.svg)
-![npm](https://img.shields.io/npm/l/tarant-react.svg)
 ![GitHub issues](https://img.shields.io/github/issues/tarantx/tarant-react.svg)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/tarantx/tarant-react.svg)
-![Downloads](https://img.shields.io/npm/dt/tarant-react.svg)
 
 ## Motivation
 
