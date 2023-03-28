@@ -17,3 +17,4 @@ CODE_OF_CONDUCT.md
 cc-reporter*
 lint-staged.config.js
 tsconfig.json
+public-key.asc
