@@ -2,6 +2,7 @@
   "name": "tarant-react",
   "version": "0.2.2",
   "description": "react renderer materializer for the tarant framework",
+  "source": "lib/index.ts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "contributors": [
@@ -18,8 +19,7 @@
     "react"
   ],
   "scripts": {
-    "prepare": "npm run build",
-    "build": "tsc",
+    "prepare": "husky install && parcel build",
     "format": "prettier --write \"**/*.ts\" && eslint --fix lib/**/*.ts",
     "lint": "eslint",
     "test": "npm run format && npm run lint && jest test",
@@ -30,33 +30,47 @@
     "deploy:minor": "npm version minor",
     "deploy:patch": "npm version patch",
     "deploy:push": "git push && git push --tags",
-    "preversion": "npm test"
+    "preversion": "npm test",
+    "lint-staged": "lint-staged",
+    "commit": "git add . && cz"
   },
   "devDependencies": {
-    "@faker-js/faker": "^7.6.0",
+    "@faker-js/faker": "7.6.0",
+    "@parcel/packager-ts": "^2.8.3",
+    "@parcel/transformer-typescript-types": "^2.8.3",
     "@types/faker": "6.6.9",
     "@types/jest": "29.5.0",
     "@types/node": "18.15.3",
     "@typescript-eslint/eslint-plugin": "5.55.0",
     "@typescript-eslint/parser": "5.55.0",
+    "commitizen": "^4.2.5",
     "coveralls": "3.1.1",
-    "esbuild": "0.17.12",
+    "cz-conventional-changelog": "3.3.0",
+    "cz-format-extension": "^1.5.1",
     "eslint": "8.36.0",
     "eslint-config-standard": "17.0.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "2.27.5",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.1.1",
+    "husky": "8.0.1",
     "jest": "29.5.0",
+    "lint-staged": "^13.2.0",
+    "parcel": "^2.8.3",
     "prettier": "2.8.4",
     "ts-jest": "29.0.5",
-    "typescript": "^5.0.2"
+    "typescript": "5.0.2"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tarant": "3.1.37"
+  "peerDependencies": {
+    "react": "18.x",
+    "react-dom": "18.x",
+    "tarant": "3.x"
   },
   "jest": {
     "preset": "ts-jest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-format-extension"
+    }
   }
 }
